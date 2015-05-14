@@ -1,0 +1,7 @@
+{
+    "host": "localhost",
+    "user": "root",
+    "password": "",
+    "database": "wechat_pick",
+    "port": 3306
+}

@@ -1,0 +1,41 @@
+extends layout
+
+block content
+  div.printOut(style="text-align:center;")
+    h1= title
+    p Welcome to 搜索公众号#{title}
+  br
+  div.printOut
+    label#page-exp 关键字
+    input(type="text" class="form-control" id="searchKey" placeholder="根据关键字搜索公众号" style="width:420px;")
+    input#getGZH-btn.btn.btn-info(type='button', value='立即搜索')
+  div(style="clear:both;")
+  br
+  br
+  br
+  div#printOut.printOut
+
+
+  script(type='text/javascript').
+    $(document).ready(function(){
+      var searchKey = window.localStorage.getItem('gzh');
+      $('#searchKey').val(searchKey);
+      
+
+      //搜索公众号
+      var searchBtn = $('#getGZH-btn');
+      var searchKey = window.localStorage.getItem('gzh');
+      searchBtn.on('click', getGZH);
+      if('' != searchKey && 0 != searchKey.length){
+        getGZH();
+      }
+
+      //公众号新闻查询
+      $('body').delegate('.searchQA', 'click', function(evt){
+        var target = evt.currentTarget || evt.target;
+        var openid = target.getAttribute('data-openid');
+        window.localStorage.setItem('openid', openid);
+        window.location.href = '/weixin/searchGZH';
+      });
+    });
+

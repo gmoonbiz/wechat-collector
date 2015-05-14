@@ -1,0 +1,20 @@
+
+
+<ul class="news-ul">
+	<%if(listData){
+		for(i = 0; i < listData.length; ++i){
+			var item = listData[i];
+	%>
+	<li style="height:auto;">
+		<h3><a href="javascript:void(0)" class="searchQA" data-openid="<%= item.openid %>" target="_blank"><%= item.name %></a></h3>
+		<div class="con-left">
+			<p><%= item.funcs %></p>
+			<span class="wxno"><%= item.wxno %></span>
+			<span class="wxno">openid：<%= item.openid %></span>
+		</div>
+		<div class="con-right">
+			<img src="<%= item.qrcode %>" width="120" height="100">
+		</div>
+	</li>
+	<%} }%>
+</ul>

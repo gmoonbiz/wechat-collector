@@ -1,0 +1,30 @@
+{
+    "sports": [
+        {
+            "from"  : "weixin",
+            "name"  : "网易新闻",
+            "work"  : true,
+            "title" : "网易新闻客户端",
+            "url"   : "http://weixin.sogou.com/gzhjs?cb=sogou.weixin.gzhcb&openid=oIWsFt9lcHjZzKcB5sfyRYJ6ZRY8&page=1&t=140505273220",
+            "type"  : 1,
+            "page"  : 1,
+            "cb"        : "sogou.weixin.gzhcb",
+            "openid"    : "oIWsFt9lcHjZzKcB5sfyRYJ6ZRY8"
+        }
+    ],
+    "gconfig": {
+        "cb"        : "sogou.weixin.gzhcb",
+        "openid"    : "oIWsFt9lcHjZzKcB5sfyRYJ6ZRY8",
+        "baseUrl"   : "http://weixin.sogou.com/gzhjs"
+    },
+    "searchGZconfig": {
+        "baseUrl"   : "http://weixin.sogou.com/weixin",
+        "query"     : "",
+        "ie"        : "utf8",
+        "type"      : 1,
+        "_ast"      : "1405082112",
+        "_asf"      : null,
+        "w"         : "01029901",
+        "cid"       : null
+    }
+}
